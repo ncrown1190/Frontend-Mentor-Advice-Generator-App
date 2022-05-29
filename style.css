@@ -1,0 +1,62 @@
+body {
+  background: hsl(218, 23%, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+}
+
+.main-container {
+  width: 500px;
+  height: 300px;
+  background: hsl(217, 19%, 24%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.advice {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+.btn {
+  position: absolute;
+  bottom: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adv-id {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 0.3em;
+  font-size: 0.8rem;
+}
+
+.adv {
+  color: white;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px hsl(150, 100%, 66%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .main-container {
+    width: 350px;
+  }
+}
